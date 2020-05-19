@@ -1,27 +1,42 @@
 let mail=document.querySelector("#mail");
 let sifre=document.querySelector("#sifre");
 let sifre2=document.querySelector("#sifre2");
+
 let buton=document.querySelector("#button");
-let check=document.querySelector("#check");
+let buton2=document.querySelector("#button2");
+let bir=document.querySelector("#bir");
+let iki=document.querySelector("#iki");
 
+buton.addEventListener("click",ileri);
+bir.className="bg-danger text-center mr-5"
+buton2.addEventListener("click",geri);
+buton2.style.display="none";
 
-buton.addEventListener("click",tikla)
-
-check.addEventListener("checked",chec);
-function chec(){
-     sifre.type="text";
-     sifre2.type="text";
+function form2(){
+buton2.style.display="block";
+buton.style.display="none";
+mail.placeholder="Ad";
+sifre2.placeholder="Soyad";
+sifre2.placeholder="Adres";
+iki.className="bg-danger text-center ml-5"
+bir.className="bg-white"
 }
-function tikla(){
-sessionStorage.setItem("Mail",mail.value);
-sessionStorage.setItem("sifre",sifre.value);
-sessionStorage.setItem("Tekrar",sifre2.value);
-}
-function tikla2(){
-     sessionStorage.setItem("Ad",ad.value);
-     sessionStorage.setItem("Soyad",soyad.value);
-     sessionStorage.setItem("Yas",yas.value);
-     sessionStorage.setItem("Adres",adres.value);
-     sessionStorage.setItem("il",il.value);
+function form1(){
+     bir.className="bg-danger mr-5"
+    iki.className="bg-white" 
+buton2.style.display="none";
+mail.placeholder="E mail";
+sifre2.placeholder="Şifre";
+sifre2.placeholder="Şifre tekrar";
+buton.style.display="block";
+
 }
 
+function ileri(){
+form2();
+
+}
+
+function geri(){
+form1();
+}
