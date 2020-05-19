@@ -16,7 +16,7 @@ function form2(){
 buton2.style.display="block";
 buton.style.display="none";
 mail.placeholder="Ad";
-sifre2.placeholder="Soyad";
+sifre.placeholder="Soyad";
 sifre2.placeholder="Adres";
 iki.className="bg-danger text-center ml-5"
 bir.className="bg-white"
@@ -26,7 +26,7 @@ function form1(){
     iki.className="bg-white" 
 buton2.style.display="none";
 mail.placeholder="E mail";
-sifre2.placeholder="Şifre";
+sifre.placeholder="Şifre";
 sifre2.placeholder="Şifre tekrar";
 buton.style.display="block";
 
