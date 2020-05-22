@@ -8,9 +8,10 @@
 </head>
 <body>
     <div class="container">
+      <div id="a">
       <span>1. En sevdiğin yemek</span>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+      <div class="form-check" id="bir">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
         <label class="form-check-label" for="exampleRadios1">
           Mantı
         </label>
@@ -21,55 +22,29 @@
             Köfte
         </label>
       </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option2">
-        <label class="form-check-label" for="exampleRadios3">
-            Karnıyarık
-        </label>
-      </div>
+      
+
+     <button type="button" onclick="tikla()" class="btn btn-info mt-3 mb-2">oyla</button>
+
       <br>
-      <span class="mt-5">2. En sevdiğin Oyun</span>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios4" value="option1" checked>
-        <label class="form-check-label" for="exampleRadios4">
-         Apex Legends
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios5" value="option2">
-        <label class="form-check-label" for="exampleRadios5">
-            League of Legends
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios6" value="option2">
-        <label class="form-check-label" for="exampleRadios6">
-            Minecraft
-        </label>
-      </div>
-      <br>
-      <span class="mt-5">3. En Şarkı</span>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios7" value="option1" checked>
-        <label class="form-check-label" for="exampleRadios7">
-      Aleyna Tilki - Sen olsan bari 
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios8" value="option2">
-        <label class="form-check-label" for="exampleRadios8">
-         Hadise - Farkımız var
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios9" value="option2">
-        <label class="form-check-label" for="exampleRadios9">
-         Murat boz - Hayat öpücüğü
-        </label>
-      </div>
-      <div class="progress">
-        <div class="progress-bar bg-success" id="tur" role="progressbar" style="width: 0%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    
+    <br>
+    <p style="display: none;" id="g">Mantı</p>
+      <div class="progress" id="prog1">
+        <div class="progress-bar bg-success " style="display: none;" id="t" role="progressbar" style="width: 0%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+      
       </div>  
+      <br>
+      <p style="display: none;" id="ga">Köfte</p>  
+      <div class="progress" id="prog2">
+       <div class="progress-bar bg-success " style="display: none;" id="t2" role="progressbar" style="width: 0%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+      </div> 
+      <br>
+      <button type="button" style="display: none;" onclick="tikla2()" id="az" class="btn btn-danger mt-3 mb-2">geri dön</button>
+
+
+     
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

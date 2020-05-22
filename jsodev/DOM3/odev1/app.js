@@ -1,42 +1,27 @@
-let mail=document.querySelector("#mail");
-let sifre=document.querySelector("#sifre");
-let sifre2=document.querySelector("#sifre2");
-
 let buton=document.querySelector("#button");
 let buton2=document.querySelector("#button2");
+let ekran1=document.querySelector("#ekran1");
+let ekran2=document.querySelector("#ekran2");
 let bir=document.querySelector("#bir");
 let iki=document.querySelector("#iki");
-
 buton.addEventListener("click",ileri);
-bir.className="bg-danger text-center mr-5"
 buton2.addEventListener("click",geri);
-buton2.style.display="none";
-
-function form2(){
-buton2.style.display="block";
-buton.style.display="none";
-mail.placeholder="Ad";
-sifre.placeholder="Soyad";
-sifre2.placeholder="Adres";
-iki.className="bg-danger text-center ml-5"
-bir.className="bg-white"
-}
-function form1(){
-     bir.className="bg-danger mr-5"
-    iki.className="bg-white" 
-buton2.style.display="none";
-mail.placeholder="E mail";
-sifre.placeholder="Şifre";
-sifre2.placeholder="Şifre tekrar";
-buton.style.display="block";
-
-}
-
 function ileri(){
-form2();
-
+    bir.className="bg-white";
+    iki.className="bg-danger";
+buton.style.display="none"
+buton2.style.display="block"
+ekran1.style.display="none";
+ekran2.style.display="block";
 }
-
 function geri(){
-form1();
+    iki.className="bg-white";
+    bir.className="bg-danger";
+    buton2.style.display="none"
+    buton.style.display="block"
+    ekran1.style.display="block";
+    ekran2.style.display="none";
 }
+    
+
+

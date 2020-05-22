@@ -13,7 +13,7 @@
 <body>
     <div class="container" >
          <p class="h1 text-danger">Kayıt Projesi</p>            
-                 
+      <div id="ekran1">
         <form class="mt-5 ">
             <div class="form-group">
              
@@ -28,15 +28,35 @@
                
                 <input type="password" placeholder="Şifre tekrar" class="form-control" id="sifre2">
               </div>
-              <div class="btn-group" role="group" aria-label="Basic example">
+              
+          </form>
+        </div>
+        <div id="ekran2" style="display: none;">
+          <form class="mt-5 ">
+              <div class="form-group">
+               
+                <input type="text" placeholder="Ad"class="form-control" id="ad" >
+                
+              </div>
+              <div class="form-group">
+                
+                <input type="text"  placeholder="Soyad" class="form-control" id="soyad">
+              </div>
+              <div class="form-group">
+                 
+                  <input type="text" placeholder="Yaş" class="form-control" id="yas">
+                </div>
+                
+            </form>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
                 <button type="button" id="button" class="btn btn-success">İleri</button>
                 
-                <button type="button" id="button2" class="btn btn-danger">Geri</button>
+                <button type="button" style="display: none;" id="button2" class="btn btn-danger">Geri</button>
                 
               </div>
            
-          </form>
-          <div class="text-center" ><span class="text-center"id="bir" class="ml-5 mr-5">1</span> <span class="text-center" id="iki">2</span></div>
+          <div class="text-center" ><span class="text-center bg-danger"id="bir" class="ml-5 mr-5">1</span> <span class="text-center" id="iki">2</span></div>
           
     </div>
 
