@@ -1,17 +1,27 @@
-let adi=new Map();
-var kisiler={
-    kisi1:{
-        ad:adi.set("ad","Berkan"),
+var kisiler=[
+   
+    {
+        id:1,
+        ad:"Berkan",       
         soyad:"Saraç"
     },
-   
-    
-}
-let adcagirma=()=>{
-    let dizi=new Array();
-    dizi.push(adi.get("ad"));
-    for (const iterator of dizi) {
-        console.log(iterator);
-    }
+    {
+        id:2,
+        ad:"İpek filiz",
+        soyad:"Yazıcı"
+    },
+    {
+        id:3,  
+        ad:"Umut",
+        soyad:"Köroğlu"
+    },
+ 
+]
+
+adcagirma=()=>{ 
+   const name= kisiler.map(function(adi){
+     return adi.ad;  
+    });
+    console.log(name);
 }
 adcagirma();

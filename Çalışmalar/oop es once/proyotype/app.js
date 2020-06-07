@@ -29,3 +29,6 @@ Employe.prototype.myset=()=>{
 }
 const emp =new Employe("Mustafa",25);
 console.log(emp);
+// NOTLAR
+// 1- Javascript prototypr tabanlı
+// 2- Javascript te en temel 

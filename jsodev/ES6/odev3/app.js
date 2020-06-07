@@ -10,5 +10,5 @@ console.log(title,width,height)
 var{title}=options;
 console.log(title);
 //c)
-var {title,...options}=options;
-console.log(title,a);
+var {title:a,...options1}=options;
+console.log(a,options1);

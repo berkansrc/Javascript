@@ -1,14 +1,12 @@
-var birinci=new Map();
-birinci.set("html",3);
-birinci.set("css",5);
-birinci.set("js",10);
-birinci.set("nodejs",10);
-for (const iterator of birinci) {
+
+const mapicin=new Map();
+mapicin.set(0,{"id":"html","price":3});
+mapicin.set(1,{"id":"css","price":5});
+mapicin.set(2,{"id":"js","price":10});
+mapicin.set(3,{"id":"nodejs","price":10});
+
+
+const a={id,price}=mapicin;
+for (const iterator of a) {
   console.log(iterator);
 }
-birinci=new Set();
-birinci.add("html");
-birinci.add("css");
-birinci.add("js");
-birinci.add("nodejs");
-console.log(birinci);
