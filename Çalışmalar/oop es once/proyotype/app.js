@@ -31,4 +31,5 @@ const emp =new Employe("Mustafa",25);
 console.log(emp);
 // NOTLAR
 // 1- Javascript prototypr tabanlı
-// 2- Javascript te en temel 
+// 2- Javascript te en temel obje prtotype
+// 3- Her bir objenin içinde bir prototype vardır
