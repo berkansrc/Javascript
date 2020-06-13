@@ -6,3 +6,4 @@ Araba.prototype.yavasla=function(){return this.hiz-100;}
 let Kamyon={}
 Kamyon.prototype=Object.create(Araba.prototype);
 console.log(Kamyon);
+

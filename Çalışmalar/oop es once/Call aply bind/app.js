@@ -1,5 +1,6 @@
 //call ve apply bir fonksiyonu bir objeye bağlamaya yarar
 //bind fonksiyonları kopyalayabilir
+//Yöntem bir amacı, bu yöntem, bir kopyalama olmadan başka bir nesne ile ilgili bir yöntem ödünç sağlar. Bu, JavaScript'te işlev borçlanması olarak bilinir.
 const obj1={
     number1:100,
     number2:200
